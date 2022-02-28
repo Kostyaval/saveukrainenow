@@ -38,6 +38,9 @@ export default {
   pwa: {
     icon: true,
     workbox: false,
+    meta: {
+      theme_color: '#FFCE20',
+    },
     manifest: {
       name: '#SaveUkraineNow',
       lang: 'en',
