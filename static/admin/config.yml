@@ -5,7 +5,7 @@ local_backend: true
 media_folder: static/img
 i18n:
   structure: single_file
-  locales: [en, de, fr]
+  locales: [en, de]
   default_locale: en
 
 collections:
@@ -19,39 +19,9 @@ collections:
         file: content/seo/homepage.yml
         fields:
           - { label: Title, name: title, i18n: true }
-          - { label: Description, name: description, required: false, i18n: true }
-      - name: app
-        label: App
-        i18n: true
-        file: content/seo/app.yml
-        fields:
-          - { label: Title, name: title, i18n: true }
-          - { label: Description, name: description, required: false, i18n: true }
-      - name: flywheel-training
-        label: Flywheel Training
-        i18n: true
-        file: content/seo/flywheel-training.yml
-        fields:
-          - { label: Title, name: title, i18n: true }
-          - { label: Description, name: description, required: false, i18n: true }
-      - name: platform
-        label: Platform
-        i18n: true
-        file: content/seo/platform.yml
-        fields:
-          - { label: Title, name: title, i18n: true }
-          - { label: Description, name: description, required: false, i18n: true }
-      - name: portable
-        label: Portable
-        i18n: true
-        file: content/seo/portable.yml
-        fields:
-          - { label: Title, name: title, i18n: true }
-          - { label: Description, name: description, required: false, i18n: true }
-      - name: rack-mount
-        label: Rack Mount
-        i18n: true
-        file: content/seo/rack-mount.yml
-        fields:
-          - { label: Title, name: title, i18n: true }
-          - { label: Description, name: description, required: false, i18n: true }
+          - {
+              label: Description,
+              name: description,
+              required: false,
+              i18n: true,
+            }
