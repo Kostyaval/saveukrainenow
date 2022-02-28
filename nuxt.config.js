@@ -17,8 +17,16 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  pwa: {
+    icon: true,
+    workbox: false,
+    manifest: {
+      name: '#SaveUkraineNow',
+      lang: 'en',
+      useWebmanifestExtension: false,
+      background_color: '#FFCE20'
+    }
+  },
 
   css: ['@/assets/styles/index.sass'],
 
@@ -29,7 +37,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/pwa',
+    isDev ? 'nuxt-storm' : '',
     '@nuxtjs/eslint-module',
   ],
 
