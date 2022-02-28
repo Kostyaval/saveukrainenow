@@ -1,0 +1,128 @@
+@import "../abstraction/variables"
+@import "../abstraction/mixin"
+
+.html
+  font-size: 15px
+  scroll-behavior: smooth
+  @media (max-width: $xs)
+    font-size: 14px
+  @media (max-width: $lg)
+    font-size: 13px
+  @media (max-width: $sm)
+    font-size: 12px
+
+body
+  font-family: Rubik, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+.container
+  +container
+
+img
+  max-width: 100%
+  height: auto
+
+.icon
+  width: 1em
+  height: 1em
+  vertical-align: -0.15em
+  fill: currentColor
+  overflow: hidden
+  &--no-font
+    width: inherit
+    height: inherit
+
+.input
+  width: 100%
+  padding: 10px 12px
+  display: block
+  border: 1px solid var(--neutral-400)
+  border-radius: 8px
+  margin-top: 1px
+  outline: none
+  &::placeholder
+    +text-tiny
+    color: var(--neutral-500)
+  &:focus
+    border-color: var(--neutral-800)
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity 2s
+.fade-enter, .fade-leave-to
+  opacity: 0
+
+.button
+  display: inline-block
+  height: 48px
+  +button-xl
+  line-height: 48px
+  min-width: 198px
+  text-align: center
+  border-radius: 8px
+  background-color: var(--corporate-500)
+  color: var(--white)
+  &--transparent
+    background-color: transparent
+    border: 1px solid var(--corporate-200)
+    color: var(--corporate-500)
+    &:hover
+      background-color: var(--corporate-100) !important
+    &:active
+      background-color: var(--corporate-200) !important
+      border-color: var(--corporate-300) !important
+  &--small
+    min-width: 151px
+  &--responsive
+    min-width: auto
+    max-width: 198px
+    width: 100%
+  &--disabled
+    color: var(--neutral-400)
+    background-color: var(--neutral-300)
+  &:hover
+    background-color: var(--corporate-400)
+  &:active
+    background-color: var(--corporate-300)
+
+.slide-enter-active
+  transition: all .3s ease
+
+.slide-leave-active
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+
+.slide-enter, .slide-leave-to
+  transform: translateX(10px)
+  opacity: 0
+
+.bounce-enter-active
+  animation: bounce-in .5s
+
+.bounce-leave-active
+  animation: bounce-out .5s
+  animation-delay: 1.5s
+
+@keyframes bounce-in
+  0%
+    opacity: 0
+    transform: translateY(-120%)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes bounce-out
+  0%
+    opacity: 1
+    transform: translateY(0)
+  to
+    opacity: 0
+    transform: translateY(120%)
+
+.slide-fade-enter-active
+  transition: all .3s ease
+
+.slide-fade-leave-active
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0)
+
+.slide-fade-enter, .slide-fade-leave-to
+  transform: translateX(10px)
+  opacity: 0

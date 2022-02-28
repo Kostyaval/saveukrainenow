@@ -1,0 +1,86 @@
+@import "../abstraction/variables"
+\:root
+  --white: #ffffff
+  --neutral-200: #f8f8f8
+  --neutral-300: #e7e7e7
+  --neutral-400: #cdcdcd
+  --neutral-500: #999999
+  --neutral-600: #808080
+  --neutral-700: #666666
+  --neutral-800: #333333
+  --black: #000000
+  --neutral-text: var(--neutral-500)
+
+  // Red
+  --red-100: #fbeeee
+  --red-200: #f6d4d4
+  --red-300: #efb4b3
+  --red-400: #e47e7d
+  --red-500: #d22827
+  --red-600: #a8201f
+  --red-700: #7e1817
+  --red-800: #541010
+  --red-900: #2a0808
+  --red-text: var(--red-500)
+
+  // Blue
+  --blue-100: #ebf2ff
+  --blue-200: #ccddff
+  --blue-300: #a6c4ff
+  --blue-400: #5992ff
+  --blue-500: #0057ff
+  --blue-600: #0045cc
+  --blue-700: #003499
+  --blue-800: #002366
+  --blue-900: #001a4c
+  --blue-text: var(--blue-500)
+
+  // Yellow
+  --yellow-100: #fffdeb
+  --yellow-200: #fff9cc
+  --yellow-300: #fff5a6
+  --yellow-400: #ffec59
+  --yellow-500: #ffe200
+  --yellow-600: #ccb500
+  --yellow-700: #998800
+  --yellow-800: #665a00
+  --yellow-900: #332d00
+  --yellow-text: var(--yellow-600)
+
+  // Green
+  --green-100: #f3fcf2
+  --green-200: #e1f8df
+  --green-300: #cbf2c7
+  --green-400: #9ee798
+  --green-500: #6ada60
+  --green-600: #55ae4d
+  --green-700: #40833a
+  --green-800: #2a5726
+  --green-900: #152c13
+  --green-text: var(--green-500)
+
+  // Corporate
+  --corporate-100: var(--red-100)
+  --corporate-200: var(--red-200)
+  --corporate-300: var(--red-300)
+  --corporate-400: var(--red-400)
+  --corporate-500: var(--red-500)
+  --corporate-600: var(--red-600)
+  --corporate-700: var(--red-700)
+  --corporate-800: var(--red-800)
+  --corporate-900: var(--red-900)
+  --corporate-text: var(--corporate-500)
+
+  // Container
+  --containerPadding: 24px
+  --containerWidth: calc(1296px + var(--containerPadding) + var(--containerPadding))
+
+  // Header
+  --header-height: 81px
+
+// Media
+@media (max-width: $lg)
+  \:root
+    --header-height: 63px
+
+
