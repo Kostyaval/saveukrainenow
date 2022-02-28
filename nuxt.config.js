@@ -42,8 +42,8 @@ export default {
       name: '#SaveUkraineNow',
       lang: 'en',
       useWebmanifestExtension: false,
-      background_color: '#FFCE20'
-    }
+      background_color: '#FFCE20',
+    },
   },
 
   css: ['@/assets/styles/index.sass'],
@@ -52,11 +52,7 @@ export default {
 
   components: true,
 
-  buildModules: [
-    '@nuxtjs/pwa',
-    isDev ? 'nuxt-storm' : '',
-    '@nuxtjs/eslint-module',
-  ],
+  buildModules: ['@nuxtjs/pwa', 'nuxt-storm', '@nuxtjs/eslint-module'],
 
   modules: ['@nuxt/content'],
 
