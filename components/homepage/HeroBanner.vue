@@ -7,7 +7,9 @@
             <img :src="logo" alt="Save Ukraine Now logo" class="logo__image" />
             <span class="logo__title">{{ siteName }}</span>
           </div>
-          <div class="logo__subtitle heading-4">русский корабль – иди нахуй</div>
+          <div class="logo__subtitle heading-4">
+            русский корабль – иди нахуй
+          </div>
         </div>
       </header>
       <div class="hero-banner__wrapper">
@@ -22,14 +24,25 @@
             </button>
           </div>
         </div>
-        <div class="hero-banner__image">
+        <div class="hero-banner__image-wrapper">
           <picture>
             <default-nuxt-source
               media="(max-width: 768px)"
-              width="327"
+              :webp="true"
               :src="bannerImageMobile"
             />
-            <nuxt-img height='600px' :src="bannerImageDesktop" />
+            <default-nuxt-source
+              media="(max-width: 768px)"
+              :src="bannerImageMobile"
+            />
+            <default-nuxt-source
+              :webp="true"
+              :src="bannerImageDesktop"
+            />
+            <nuxt-img
+              class="hero-banner__image"
+              :src="bannerImageDesktop"
+            />
           </picture>
         </div>
       </div>
@@ -91,6 +104,7 @@ export default {
     display: flex
     flex-wrap: nowrap
     align-items: center
+    margin: 0 auto
   &__cta
     flex: 50% 0 0
   &__cta-wrapper
@@ -100,7 +114,7 @@ export default {
     padding-top: 45px
   &__cta-button
     margin-top: 50px
-  &__image
+  &__image-wrapper
     flex: 50% 0 0
 .header
   width: calc(100% - var(--containerPadding) - var(--containerPadding))
@@ -129,14 +143,19 @@ export default {
       flex: auto 0 0
     &__cta-description
       padding-top: 20px
-    &__image
+    &__cta-button
+      width: 100%
+      max-width: 100%
+    &__image-wrapper
       padding-bottom: 20px
       flex: auto 0 0
+    &__image
+      max-width: 337px
+      width: 100%
   .logo
     align-items: flex-start
     flex-direction: column
     &__subtitle
       padding-left: 50px
       line-height: 1
-
 </style>
