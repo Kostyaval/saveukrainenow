@@ -116,6 +116,8 @@ export default {
     margin-top: 50px
   &__image-wrapper
     flex: 50% 0 0
+  &__image
+    height: 600px
 .header
   width: calc(100% - var(--containerPadding) - var(--containerPadding))
   max-width: var(--container)
@@ -150,6 +152,7 @@ export default {
       padding-bottom: 20px
       flex: auto 0 0
     &__image
+      height: auto
       max-width: 337px
       width: 100%
   .logo
