@@ -8,7 +8,7 @@ en:
   heroImageDesktop: /static/files/hero_desktop-min.png
   heroImageMobile: /static/files/hero_mobile-min.png
   buttonText: Make Donate
-  logo: /static/files/saveukrainenow_logo.png
+  logo: /static/files/sun_logo.svg
 de:
   siteName: "#SaveUkraineNow"
   title: Hello indifferent to peace person
