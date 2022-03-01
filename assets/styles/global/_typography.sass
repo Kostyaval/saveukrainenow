@@ -1,84 +1,35 @@
 .heading-1
-  +text-6xl
+  color: var(--black)
+  font-size: 48px
+  line-height: 56px
   font-weight: 700
-
+  @media (max-width: $md)
+    font-size: 28px
+    line-height: 48px
 .heading-2
-  +text-5xl
+  text-align: center
   font-weight: 700
-
+  font-size: 36px
+  line-height: 48px
+  @media (max-width: $md)
+    text-align: left
+    font-size: 28px
 .heading-3
-  +text-4xl
+  font-size: 18px
+  line-height: 32px
   font-weight: 700
-
+  color: var(--gray-dark)
+  @media (max-width: $md)
+    font-size: 14px
 .heading-4
-  +text-3xl
+  font-size: 14px
+  line-height: 32px
   font-weight: 700
-
-.heading-5
-  +text-2xl
-  font-weight: 700
-
-.heading-6
-  +text-xl
-  font-weight: 500
-
-.subheading-1
-  +text-lg
-  font-weight: 500
-
-.subheading-2
-  +text-base
-  font-weight: 500
-
-.subheading-3
-  +text-tiny
-  font-weight: 500
-
-.body-1
-  +text-lg
-  color: var(--neutral-600)
-
-.body-2
-  +text-base
-  letter-spacing: 0.2px
-
-.body-3
-  +text-tiny
-  color: var(--neutral-600)
-
-.body-1-hyperlink
-  +text-lg
-  text-decoration: underline
-
-.body-2-hyperlink
-  +text-base
-  text-decoration: underline
-
-.body-3-hyperlink
-  +text-tiny
-  text-decoration: underline
-  color: var(--red-500)
-
-.caption-1
-  +text-sm
-  color: var(--neutral-800)
-
-.caption-2
-  +text-xs
-  color: var(--neutral-500)
-
-.subtitle-1
-  +text-lg
-  font-weight: 500
-  letter-spacing: 0.25px
-
-.subtitle-2
-  +text-base
-  font-weight: 500
-  letter-spacing: 0.2px
-
-.subtitle-3
-  +text-tiny
-  font-weight: 500
-  letter-spacing: 0.4px
-  color: var(--neutral-500)
+  color: var(--gray-dark)
+.description
+  font-size: 18px
+  line-height: 32px
+  color: var(--gray-dark)
+  @media (max-width: $md)
+    font-size: 14px
+    line-height: 28px
