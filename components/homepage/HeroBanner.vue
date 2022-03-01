@@ -91,7 +91,7 @@ export default {
   position: relative
   min-height: 777px
   height: 100vh
-  padding: 55px 0 80px
+  padding: 32px 0 80px
   background: var(--gray-light) url('/images/gerb.svg') calc(100% + 30px) center no-repeat
   background-size: auto 130%
   .container
@@ -100,7 +100,7 @@ export default {
     position: absolute
     +absolute-xy-centered
     width: calc(100% - var(--containerPadding) - var(--containerPadding))
-    padding-top: 40px
+    padding-top: 70px
     display: flex
     flex-wrap: nowrap
     align-items: center
@@ -117,7 +117,7 @@ export default {
   &__image-wrapper
     flex: 50% 0 0
   &__image
-    height: 600px
+    max-height: 600px
 .header
   width: calc(100% - var(--containerPadding) - var(--containerPadding))
   max-width: var(--container)
@@ -136,10 +136,10 @@ export default {
 @media (max-width: $md)
   .hero-banner
     padding: 30px 0 60px
+    background-position:
     &__wrapper
       position: static
       +reset-centered
-      padding-top: 70px
       flex-direction: column-reverse
     &__cta
       flex: auto 0 0
@@ -152,7 +152,6 @@ export default {
       padding-bottom: 20px
       flex: auto 0 0
     &__image
-      height: auto
       max-width: 337px
       width: 100%
   .logo
