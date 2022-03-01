@@ -29,7 +29,7 @@
               width="327"
               :src="bannerImageMobile"
             />
-            <nuxt-img :src="bannerImageDesktop" />
+            <nuxt-img height='600px' :src="bannerImageDesktop" />
           </picture>
         </div>
       </div>
@@ -76,8 +76,8 @@ export default {
 <style scoped lang="sass">
 .hero-banner
   position: relative
-  min-height: 100vh
-  height: 100%
+  min-height: 777px
+  height: 100vh
   padding: 55px 0 80px
   background: var(--gray-light) url('/images/gerb.svg') calc(100% + 30px) center no-repeat
   background-size: auto 130%
@@ -104,6 +104,7 @@ export default {
     flex: 50% 0 0
 .header
   width: calc(100% - var(--containerPadding) - var(--containerPadding))
+  max-width: var(--container)
   position: absolute
 .logo
   display: flex
