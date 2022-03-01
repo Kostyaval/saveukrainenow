@@ -1,0 +1,19 @@
+en:
+  siteName: "#SaveUkraineNow"
+  title: Hello indifferent to peace person
+  description: We collect money from those who are not indifferent to what is
+    happening in Ukraine, we buy everything necessary for our army in Hungary
+    and deliver provisions, uniforms, medicines to support the defenders of our
+    country in all cities.
+  heroImageDesktop: /static/files/hero_desktop-min.png
+  heroImageMobile: /static/files/hero_mobile-min.png
+  buttonText: Make Donate
+  logo: /static/files/logo.svg
+de:
+  siteName: "#SaveUkraineNow"
+  title: Hello indifferent to peace person
+  description: We collect money from those who are not indifferent to what is
+    happening in Ukraine, we buy everything necessary for our army in Hungary
+    and deliver provisions, uniforms, medicines to support the defenders of our
+    country in all cities.
+  buttonText: Make Donate

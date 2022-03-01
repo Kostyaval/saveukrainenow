@@ -51,11 +51,21 @@ export default {
 
   css: ['@/assets/styles/index.sass'],
 
-  plugins: [],
+  plugins: ['~/plugins/global'],
 
   components: true,
 
-  buildModules: ['@nuxtjs/pwa', 'nuxt-storm', '@nuxtjs/eslint-module'],
+  buildModules: [
+    '@nuxtjs/pwa',
+    'nuxt-storm',
+    '@nuxtjs/eslint-module',
+    '@nuxt/image',
+    '@nuxtjs/style-resources',
+  ],
+
+  styleResources: {
+    sass: '~assets/styles/abstraction/index.sass',
+  },
 
   modules: ['@nuxt/content'],
 

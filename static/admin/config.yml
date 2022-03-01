@@ -9,19 +9,42 @@ i18n:
   default_locale: en
 
 collections:
-  - name: 'seo'
+  - name: 'common'
     i18n: true
-    label: 'SEO'
+    label: 'Common'
     files:
-      - name: homepage
-        label: Homepage
+      - name: heroBanner
+        label: Hero Banner
         i18n: true
-        file: content/seo/homepage.yml
+        file: content/common/heroBanner.yml
         fields:
+          - { label: Site name, name: siteName, i18n: true }
+          - label: Logo
+            name: logo
+            widget: 'image'
+            media_folder: /static/files
+            media_library:
+              config:
+                max_file_size: 512000
           - { label: Title, name: title, i18n: true }
           - {
               label: Description,
               name: description,
-              required: false,
+              required: true,
               i18n: true,
             }
+          - { label: Button text, name: buttonText, i18n: true }
+          - label: Hero Image Desktop
+            name: heroImageDesktop
+            widget: 'image'
+            media_folder: /static/files
+            media_library:
+              config:
+                max_file_size: 512000
+          - label: Hero Image Mobile
+            name: heroImageMobile
+            widget: 'image'
+            media_folder: /static/files
+            media_library:
+              config:
+                max_file_size: 512000
